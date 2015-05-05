@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,
+    bottom=3cm, bindingoffset=1cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{amsfonts} % if you want blackboard bold symbols e.g. for real numbers
+\usepackage{graphicx} % if you want to include jpeg or pdf pictures
+\usepackage{enumerate} %enumerar
+\usepackage{ae}
+\usepackage{graphics}
+\usepackage{colortbl}
+\usepackage{verbatim}
+%\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{upgreek}
+\usepackage{multirow}
+\usepackage{amssymb,amsmath}
+\usepackage{latexsym}
+\usepackage{tabulary}
+\usepackage{tabularx}
+%tabela toprule precisa
+\usepackage{booktabs}
+% pra rotacionar
+\usepackage{rotate}
+\usepackage{rotating}%
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{footnote}
+\usepackage{makeidx} %indice remissivo
+%\usepackage{showidx}
+\usepackage{threeparttable}
+\usepackage{marvosym}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{textcomp}
+\usepackage{cancel}
+\usepackage{wasysym}
+%\usepackage{marvosym}
+\usepackage{tipa}%omega
+\usepackage{upgreek}
+\usepackage{enumerate}
+\usepackage{indentfirst}
+\usepackage{hyperref}%coloca referencia marcada
+\usepackage{tikz}%fazer graficos
+\usepackage{tikz-3dplot}%fazer graficos
+\usepackage[right]{lineno}
+\begin{document}
+\begin{tabular}{m{2.8cm}p{9.4cm}m{4.2cm}}
+%\begin{tabular}{m{1.1cm}p{8.7cm}m{2.6cm}}
+
+\centering{\includegraphics[width=1.8cm]{Logomarca_jpg.jpg}}
+&\centering{\fontsize{11}{11}\selectfont{\textbf{Universidade Federal de Ouro Preto}}}\\
+\centering{\fontsize{9}{9}\selectfont{\textbf{Instituto de Ciências Exatas e Aplicadas}}}\\
+\centering{\fontsize{9}{9}\selectfont{\textbf{Departamento de Engenharia Elétrica}}}\\
+
+& \centering{\includegraphics[width=4.0cm]{logoicea.jpg}}
+\end{tabular}\\
+\hrule
+
+\		
+
+\
+Implemente um programa que retorne uma aproximação do valor de $\pi$, de acordo com a Fórmula de Leibniz: 
+
+\begin{displaymath}
+\pi \approx 4 . \left(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \frac{1}{11} + \cdots + \frac{1}{n}\right)
+\end{displaymath}
+
+Ou seja: 
+\begin{displaymath}
+\pi \approx 4 . \sum_{i=0}^{n-1} \frac{(-1)^i}{2.i+1}
+\end{displaymath}
+
+\
+
+Onde $n$ indica o número de termos da série que devem ser usados para o cálculo do valor de $\pi$. Implemente um programa que receba do teclado o número de termos a ser utilizados no cálculo de $\pi$ e, usando a função acima, calcule e imprima o valor de $\pi$ calculado. Se o número de termos fornecido for menos do que um, o programa deve exibir uma mensagem de erro.
+
+\end{document}
